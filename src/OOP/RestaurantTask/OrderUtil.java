@@ -7,16 +7,6 @@ public class OrderUtil {
     public static int ordersCount = 0;
 
     public static void addNewOrder(Order order) {
-        int percentage = (ordersCount / orderList.length) * 100;
-        if (percentage >= 80) {
-            Order[] orderList1 = new Order[orderList.length*2];
-            for (int i = 0; i < ordersCount; i++) {
-                orderList1[i] = orderList[i];
-            }
-            orderList = orderList1;
-        }
-        orderList[ordersCount] = order;
-        ordersCount++;
     }
 
     public static void removeOrder(String orderName) {

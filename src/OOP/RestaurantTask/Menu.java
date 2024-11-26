@@ -10,9 +10,14 @@ public class Menu {
     }
 
     public static void getPersonalMenu() {
-        System.out.println("1.Add an order \n"+
-                "2.Remove an order \n"+
-                "3.See order list and total selling \n"+
+        if (TableUtil.tablesCount != 0){
+            for (int i = 0; i < TableUtil.tablesCount; i++) {
+                System.out.println((i+1)+".Table 1");
+            }
+            System.out.println("1.Add new table \n"+
+                    "4.Exit");
+        }
+        System.out.println("1.Add new table \n"+
                 "4.Exit");
     }
 }
