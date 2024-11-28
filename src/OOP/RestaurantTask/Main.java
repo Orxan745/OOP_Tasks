@@ -14,7 +14,7 @@ public class Main {
                     Menu.getAdminMenu();
                     System.out.print("Please select an option: ");
                     int option = scanner.nextInt();
-                    if (option == 5) {
+                    if (option == 6) {
                         break;
                     }
                     switch (option) {
@@ -22,6 +22,7 @@ public class Main {
                         case 2 -> MenuUtil.removeFood();
                         case 3 -> RestaurantUtil.printFoodList();
                         case 4 -> MenuUtil.searchFood();
+                        case 5 -> MenuUtil.getTotalIncome();
                     }
                 }
             } else if (Account.personalPassword.equals(password)) {

@@ -4,7 +4,17 @@ public class TableUtil {
 
     public static Table[] tables = new Table[10];
 
+    private static double totalIncome = 0;
+
     public static int tablesCount = 0;
+
+    public static double getTotalIncome() {
+        return totalIncome;
+    }
+
+    public static void setTotalIncome(double totalIncome) {
+        TableUtil.totalIncome = totalIncome;
+    }
 
     public static void createNewTable(Table table) {
         int percentage = (tablesCount / tables.length) * 100;
@@ -38,5 +48,14 @@ public class TableUtil {
                 System.out.println(((i+1)+"."+tables[i].getTableName()));
             }
         }
+    }
+
+    public static void setTotalIncome() {
+        double totalIncome = 0;
+        for (int i = 0; i < tablesCount; i++) {
+            totalIncome = totalIncome + TableUtil.tables[i].getTotalPrice();
+        }
+
+        setTotalIncome(totalIncome);
     }
 }

@@ -2,7 +2,9 @@ package OOP.RestaurantTask;
 
 public class Table {
 
-    public String tableName;
+    private String tableName;
+
+    private double totalPrice;
 
     public Order[] tableOrders = new Order[10];
 
@@ -14,6 +16,18 @@ public class Table {
 
     public String getTableName() {
         return tableName;
+    }
+
+    public void setTotalPrice() {
+        double totalPrice = 0;
+        for (int i = 0; i < ordersCount; i++) {
+            totalPrice = totalPrice + tableOrders[i].getOrderPrice();
+        }
+        this.totalPrice = totalPrice;
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
     }
 
     public void addNewOrder(Order order) {
@@ -40,6 +54,7 @@ public class Table {
                 break;
             }
         }
+        ordersCount--;
     }
 
     public void printOrderList(){

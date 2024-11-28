@@ -30,6 +30,7 @@ public class RestaurantUtil {
                 break;
             }
         }
+        foodsCount--;
     }
 
     public static void printFoodList() {

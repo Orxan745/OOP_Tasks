@@ -7,7 +7,8 @@ public class Menu {
                 "2.Remove a food from restaurant \n"+
                 "3.Print the list of foods \n"+
                 "4.Search a food from restaurant \n"+
-                "5.Exit");
+                "5.Get total income \n"+
+                "6.Exit");
         System.out.println("---------------------------------------");
     }
 

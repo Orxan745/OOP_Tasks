@@ -74,4 +74,9 @@ public class MenuUtil {
 
         table.removeOrder(orderName);
     }
+
+    public static void getTotalIncome() {
+        double totalIncome = TableUtil.getTotalIncome();
+        System.out.println("Total income: "+totalIncome);
+    }
 }
