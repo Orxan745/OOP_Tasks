@@ -2,9 +2,19 @@ package OOP.RestaurantTask;
 
 public class Table {
 
+    public String tableName;
+
     public Order[] tableOrders = new Order[10];
 
     public static int ordersCount = 0;
+
+    public void setTableName(String tableName) {
+        this.tableName = tableName;
+    }
+
+    public String getTableName() {
+        return tableName;
+    }
 
     public void addNewOrder(Order order) {
         int percentage = (ordersCount / tableOrders.length) * 100;
@@ -24,9 +34,8 @@ public class Table {
             if (tableOrders[i].getOrderName().equals(orderName)) {
                 tableOrders[i] = null;
                 for (int j = 0; j < ordersCount; i++) {
-                    Order order = tableOrders[i];
                     tableOrders[i+j] = tableOrders[i+j+1];
-                    tableOrders[i+j+1] = order;
+                    tableOrders[i+j+1] = null;
                 }
                 break;
             }

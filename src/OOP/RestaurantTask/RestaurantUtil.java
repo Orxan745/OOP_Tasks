@@ -24,9 +24,8 @@ public class RestaurantUtil {
             if (foodList[i].getFoodName().equals(foodName)) {
                 foodList[i] = null;
                 for (int j = 0; j < foodsCount; j++) {
-                    Food food = foodList[i];
                     foodList[i+j] = foodList[i+j+1];
-                    foodList[i+j+1] = food;
+                    foodList[i+j+1] = null;
                 }
                 break;
             }

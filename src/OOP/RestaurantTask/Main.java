@@ -29,13 +29,33 @@ public class Main {
                     Menu.getPersonalMenu();
                     System.out.print("Please select an option: ");
                     int option = scanner.nextInt();
-                    if (option == 4) {
-                        break;
-                    }
-                    switch (option) {
-                        case 1 -> MenuUtil.addOrder();
-                        case 2 -> MenuUtil.removeOrder();
-                        case 3 -> OrderUtil.printOrderList();
+                    if (TableUtil.tablesCount != 0) {
+                        for (int i = 0; i < TableUtil.tablesCount; i++) {
+                            if (option == i+1) {
+                                Menu.getTableMenu();
+                                System.out.print("Please select an option: ");
+                                int option1 = scanner.nextInt();
+                                if (option1 == 4) {
+                                    break;
+                                }
+                                switch (option1) {
+                                    case 1 -> MenuUtil.addOrderToTable(TableUtil.tables[i]);
+                                    case 2 -> MenuUtil.removeOrderFromTable(TableUtil.tables[i]);
+                                    case 3 -> TableUtil.tables[i].printOrderList();
+                                    case 5 -> System.exit(0);
+                                }
+                            }
+                        }
+                        if (option == TableUtil.tablesCount+1) {
+                            MenuUtil.createTable();
+                        }else if (option == TableUtil.tablesCount+2){
+                            MenuUtil.removeTable();
+                        }
+                    }else {
+                        switch (option) {
+                            case 1 -> MenuUtil.createTable();
+                            case 2 -> System.exit(0);
+                        }
                     }
                 }
             } else {

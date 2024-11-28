@@ -38,21 +38,40 @@ public class MenuUtil {
         RestaurantUtil.searchFood(foodName);
     }
 
-    public static void addOrder() {
+    public static void createTable() {
+        Scanner scanner = new Scanner(System.in);
+        Table table = new Table();
+        System.out.print("Table name: ");
+        String tableName = scanner.nextLine();
+        table.setTableName(tableName);
+
+        TableUtil.createNewTable(table);
+    }
+
+    public static void removeTable() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter table you want to remove: ");
+        String tableName = scanner.nextLine();
+
+        TableUtil.removeTable(tableName);
+    }
+
+    public static void addOrderToTable(Table table) {
         Scanner scanner = new Scanner(System.in);
         Order order = new Order();
         System.out.print("Order: ");
         String foodName = scanner.nextLine();
+
         order.setOrder(foodName);
 
-        OrderUtil.addNewOrder(order);
+        table.addNewOrder(order);
     }
 
-    public static void removeOrder() {
+    public static void removeOrderFromTable(Table table) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter the order you want to remove: ");
         String orderName = scanner.nextLine();
 
-        OrderUtil.removeOrder(orderName);
+        table.removeOrder(orderName);
     }
 }
