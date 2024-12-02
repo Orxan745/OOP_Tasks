@@ -1,4 +1,4 @@
-package OOP.LibraryTask;
+package OOP.library;
 
 import java.util.Scanner;
 

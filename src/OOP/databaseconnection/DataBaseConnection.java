@@ -1,4 +1,4 @@
-package OOP.DataBaseConnectionTask;
+package OOP.databaseconnection;
 
 public class DataBaseConnection {
 

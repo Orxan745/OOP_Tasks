@@ -1,4 +1,4 @@
-package OOP.RestaurantTask;
+package OOP.restaurant;
 
 public class Table {
 

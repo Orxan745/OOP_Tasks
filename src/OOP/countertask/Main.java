@@ -1,4 +1,4 @@
-package OOP.CounterTask;
+package OOP.countertask;
 
 import java.util.Scanner;
 

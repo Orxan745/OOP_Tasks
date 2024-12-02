@@ -1,8 +1,8 @@
-package OOP.LibraryTask;
+package OOP.library;
 
 import java.util.Scanner;
 
-import static OOP.LibraryTask.Book.*;
+import static OOP.library.Book.*;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package OOP.CounterTask;
+package OOP.countertask;
 
 public class Person {
     public static int counter = 0;

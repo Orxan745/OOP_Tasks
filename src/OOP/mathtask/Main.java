@@ -1,4 +1,4 @@
-package OOP.MathTask;
+package OOP.mathtask;
 
 import java.util.Scanner;
 

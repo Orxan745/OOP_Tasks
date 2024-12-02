@@ -1,4 +1,4 @@
-package OOP.StoreTask;
+package OOP.store;
 
 import java.util.Scanner;
 

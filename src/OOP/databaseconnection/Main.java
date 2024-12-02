@@ -1,4 +1,4 @@
-package OOP.DataBaseConnectionTask;
+package OOP.databaseconnection;
 
 public class Main {
     public static void main(String[] args) {

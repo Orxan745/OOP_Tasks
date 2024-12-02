@@ -1,4 +1,4 @@
-package OOP.MathTask;
+package OOP.mathtask;
 
 public class MathUtils {
 
