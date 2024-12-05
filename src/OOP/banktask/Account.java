@@ -17,6 +17,8 @@ public class Account {
        }
        customers[customerCount] = customer;
        customerCount++;
+       String a = Customer.randomIdentityCode();
+       customer.setIdentificationNumber(a);
         System.out.println("---------------------------------------");
         System.out.println("Account created successfully!");
         System.out.println("Your identification number is: "+customer.getIdentificationNumber());

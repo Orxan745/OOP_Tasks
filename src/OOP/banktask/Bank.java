@@ -20,9 +20,9 @@ public class Bank {
             if (Account.customers[i].getIdentificationNumber().equals(identificationNumber)) {
                 System.out.println("---------------------------------------");
                 System.out.println("Name: "+Account.customers[i].getName());
-                System.out.println("Name: "+Account.customers[i].getSurname());
-                System.out.println("Name: "+Account.customers[i].getDeposit());
-                System.out.println("Name: "+Account.customers[i].getIdentificationNumber());
+                System.out.println("Surname: "+Account.customers[i].getSurname());
+                System.out.println("Deposit: "+Account.customers[i].getDeposit());
+                System.out.println("Identification Number: "+Account.customers[i].getIdentificationNumber());
                 System.out.println("---------------------------------------");
             }
         }

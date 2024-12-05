@@ -10,7 +10,7 @@ public class MenuUtil {
         String identificationNumber = scanner.next();
         while (true) {
             Menu.getAccountMenu();
-            System.out.println("Select an option: ");
+            System.out.print("Select an option: ");
             int option = scanner.nextInt();
             if (option == 4) {
                 break;
@@ -18,12 +18,12 @@ public class MenuUtil {
             switch (option) {
                 case 1 -> Bank.getAllCustomerInformation(identificationNumber);
                 case 2 -> {
-                    System.out.println("Please enter the amount you want to enter to another account: ");
+                    System.out.print("Please enter the amount you want to enter to another account: ");
                     double amount = scanner.nextDouble();
                     Bank.increaseAmount(identificationNumber, amount);
                 }
                 case 3 -> {
-                    System.out.println("Please enter the account number you want to send money: ");
+                    System.out.print("Please enter the account number you want to send money: ");
                     String identificationNumber2 = scanner.next();
                     System.out.println("Enter the amount you want to enter to another account: ");
                     double amount = scanner.nextDouble();

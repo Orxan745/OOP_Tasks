@@ -15,14 +15,6 @@ public class Customer {
     public Customer(String name, String surname) {
         setName(name);
         setSurname(surname);
-        while (getIdentificationNumber() != null) {
-            String a = randomIdentityCode();
-            for (int i = 0; i < Account.customerCount; i++) {
-                if (!Account.customers[i].getIdentificationNumber().equals(a)) {
-                    setIdentificationNumber(a);
-                }
-            }
-        }
     }
 
     public void setName(String name) {
