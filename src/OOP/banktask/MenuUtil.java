@@ -41,7 +41,7 @@ public class MenuUtil {
         System.out.print("Surname: ");
         String surname = scanner.nextLine();
         Customer customer = new Customer(name, surname);
-        Account.createNewAccount(customer);
+        Accounts.createNewAccount(customer);
         System.out.println("---------------------------------------");
     }
 

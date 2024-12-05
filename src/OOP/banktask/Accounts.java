@@ -1,6 +1,6 @@
 package OOP.banktask;
 
-public class Account {
+public class Accounts {
 
     public static Customer[] customers = new Customer[10];
 
