@@ -25,20 +25,20 @@ public class Customer {
         return name;
     }
 
-    public void setDeposit(double deposit) {
-        this.deposit = deposit;
-    }
-
-    public double getDeposit() {
-        return deposit;
-    }
-
     public void setSurname(String surname) {
         this.surname = surname;
     }
 
     public String getSurname() {
         return surname;
+    }
+
+    public void setDeposit(double deposit) {
+        this.deposit = deposit;
+    }
+
+    public double getDeposit() {
+        return deposit;
     }
 
     public void setIdentificationNumber(String identificationNumber) {

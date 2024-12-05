@@ -18,7 +18,7 @@ public class MenuUtil {
             switch (option) {
                 case 1 -> Bank.getAllCustomerInformation(identificationNumber);
                 case 2 -> {
-                    System.out.print("Please enter the amount you want to enter to another account: ");
+                    System.out.print("Please enter the amount you want to add to account: ");
                     double amount = scanner.nextDouble();
                     Bank.increaseAmount(identificationNumber, amount);
                 }
