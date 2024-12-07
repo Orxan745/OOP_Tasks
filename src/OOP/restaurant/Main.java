@@ -20,7 +20,7 @@ public class Main {
                     switch (option) {
                         case 1 -> MenuUtil.addFood();
                         case 2 -> MenuUtil.removeFood();
-                        case 3 -> RestaurantUtil.printFoodList();
+                        case 3 -> Restaurant.printFoodList();
                         case 4 -> MenuUtil.searchFood();
                         case 5 -> MenuUtil.getTotalIncome();
                     }

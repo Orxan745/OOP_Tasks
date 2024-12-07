@@ -1,4 +1,4 @@
-package OOP.restaurant;
+package OOP.restaurantv2;
 
 public class Food {
 

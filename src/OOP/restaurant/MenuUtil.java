@@ -19,7 +19,7 @@ public class MenuUtil {
         food.setPrice(foodPrice);
         food.setCategory(foodCategory);
 
-        RestaurantUtil.addNewFood(food);
+        Restaurant.addNewFood(food);
     }
 
     public static void removeFood() {
@@ -27,7 +27,7 @@ public class MenuUtil {
         System.out.print("Please enter the name of food you want to remove: ");
         String foodName = scanner.nextLine();
 
-        RestaurantUtil.removeFood(foodName);
+        Restaurant.removeFood(foodName);
     }
 
     public static void searchFood() {
@@ -35,7 +35,7 @@ public class MenuUtil {
         System.out.print("Please enter the name of food you want to search: ");
         String foodName = scanner.nextLine();
 
-        RestaurantUtil.searchFood(foodName);
+        Restaurant.searchFood(foodName);
     }
 
     public static void createTable() {

@@ -1,6 +1,6 @@
 package OOP.restaurant;
 
-import static OOP.restaurant.RestaurantUtil.*;
+import static OOP.restaurant.Restaurant.*;
 
 public class Order {
 

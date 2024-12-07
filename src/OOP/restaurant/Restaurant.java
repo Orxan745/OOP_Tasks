@@ -1,6 +1,6 @@
 package OOP.restaurant;
 
-public class RestaurantUtil {
+public class Restaurant {
 
     public static Food[] foodList = new Food[10];
 
@@ -47,9 +47,7 @@ public class RestaurantUtil {
         System.out.println("---------------------------------------");
         for (int i = 0; i < foodsCount; i++) {
             if (foodList[i].getFoodName().equals(foodName)) {
-                System.out.println("Name: "+foodList[i].getFoodName());
-                System.out.println("Price: "+foodList[i].getPrice());
-                System.out.println("Category: "+foodList[i].getCategory());
+                System.out.println(foodList[i]);
                 break;
             }
         }
